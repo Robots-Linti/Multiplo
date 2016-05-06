@@ -17,10 +17,10 @@
           "help": {
             "online": ""
           },
-          "url": "https://MCUdude.github.io/MightyCore/MightyCore-1.0.0.tar.gz",
+          "url": "https://github.com/Robots-Linti/Multiplo/raw/binary/MultiploN6-Max-1.0.0.tar.gz",
           "archiveFileName": "MultiploN6-Max-1.0.0.tar.gz",
-          "checksum": "SHA-256:283b442209cef5406bc7c21074664e1b2783d9b5997f50b3195a5c6cd0ee4de5",
-          "size": "306232",
+          "checksum": "SHA-256:76e298bf9d42359048712fc2f2ae220044fc640ac2a24674348b9806ba978181",
+          "size": "253554",
           "boards": [
             {"name": "ATmega1284p"}
           ],
