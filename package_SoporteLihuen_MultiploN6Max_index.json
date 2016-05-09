@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/Robots-Linti/Multiplo/raw/binary/MultiploN6-Max-1.0.0.tar.gz",
           "archiveFileName": "MultiploN6-Max-1.0.0.tar.gz",
-          "checksum": "SHA-256:76e298bf9d42359048712fc2f2ae220044fc640ac2a24674348b9806ba978181",
-          "size": "253554",
+          "checksum": "SHA-256:1fd79990b92c3da9dd7e9e4517ddba37c2227241ab25f608fd599aef3aba6da7",
+          "size": "405852",
           "boards": [
             {"name": "ATmega1284p"}
           ],
