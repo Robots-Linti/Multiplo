@@ -3,7 +3,7 @@
 Un core Arduino para el robot MultiploN6-Max de [RobotGroup](www.robotgroup.com.ar), corriendo [Optiboot 6](https://github.com/Optiboot/optiboot). Las librerías más importantes como SD, Servo, SPI y Wire fueron modificadas para que funcionen correctamente. Sin embargo, la mayoría de librerías de terceros deberían funcionar sin problemas.
 
 <br/> <br/>
-Este core requiere por lo menos de la version 1.6 de Arduino, siendo la v1.6.5+ recomendada.
+_Este core requiere por lo menos de la version 1.6 de Arduino, siendo la v1.6.5+ recomendada._
 <br/>
 
 <br/> <br/>
