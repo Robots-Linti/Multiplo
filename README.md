@@ -1,46 +1,46 @@
 # Multiplo N6 Core
-An Arduino core for the MutiploN6 robot from [RobotGroup](www.robotgroup.com.ar), all running [Optiboot 6](https://github.com/Optiboot/optiboot). Major libraries such as SD, Servo, SPI and Wire are modified to work with this core. Still, a large amount of third-party libraries often works without any modifications. 
+
+Un core Arduino para el robot MultiploN6-Max de [RobotGroup](www.robotgroup.com.ar), corriendo [Optiboot 6](https://github.com/Optiboot/optiboot). Las librerías más importantes como SD, Servo, SPI y Wire fueron modificadas para que funcionen correctamente. Sin embargo, la mayoría de librerías de terceros deberían funcionar sin problemas.
+
 <br/> <br/>
-This core requires at least Arduino IDE v1.6, where v1.6.5+ is recommended. 
+Este core requiere por lo menos de la version 1.6 de Arduino, siendo la v1.6.5+ recomendada.
 <br/>
 
 <br/> <br/>
 
-##Supported microcontrollers
+##Microcontrolador soportado
 * ATmega1284*
 
-(* all variants - P. Select the correct version in the 'Variant' menu)
+##Frecuencias de reloj soportadas
+* 20 MHz oscilador externo
+* 16 MHz oscilador externo (default)
+* 8 MHz oscilador externo
+* 8 MHz oscilador interno
+* 1 MHz oscilador interno
 
-##Supported clock frequencies
-* 20 MHz external oscillator
-* 16 MHz external oscillator (default)
-* 8 MHz external oscillator
-* 8 MHz internal oscillator
-* 1 MHz internal oscillator 
- 
-Select your microcontroller in the boards menu, then select the clock frequency. You'll have to hit "Burn bootloader" in order to set the correct fuses and upload the correct bootloader. <br/>
-Make sure you connect an ISP programmer, and select the correct one in the "Programmers" menu. For time critical operations an external oscillator is recommended.
+Seleccione su microcontrolador en el menu de Herramientas -> Tarjeta, y luego seleccione la frecuencia del reloj.
 
-##BOD option
-Brown out detection, or BOD for short lets the microcontroller sense the input voltage and shut down if the voltage goes below the brown out setting. For microcontrollers with an extended fuse like the 1284p, there is a separate BOD option. To change the BOD settings you'll have to connect an ISP programmer and hit "Burn bootloader".
+##Opcion BOD
+"Brown out detection", es una opcion que permite al microcontrolador sensar la entrada de voltaje y apagarse si el mismo esta por debajo del valor seleccionado. Para el 1284p existe una opcion BOD separada. Para cambiarla se debe conectar un programador ISP y grabar el bootloader nuevamente.
 
 ##Pinout
-This core got two different pinout option. The default one is named "Standard", and is based on the original AVR pinout. The other one is named "Bobuino" and is basically an Arduino UNO pinout setting. This pinout version is great for using with shields or code that's written for the Arduino UNO, as the pin functions stays the same (MOSI on D11, MISO on D12, SCK on D13). Please have a look at the (`pins_arduino.h`) files for more info. Pick your favorite!</br> </br>
-<b>Click to enlarge:</b> 
+Este core tiene dos opciones de pines diferentes. Por defecto se encuentra seleccionada la "Standard", que esta basada en la configuracion de pines del AVR original. La otra se llama "Bobuino", que es basicamente la configuracion de pines del Arduino UNO. Esta opcion sirve para usar la placa con shields o codigo escrito para este ultimo Arduino, porque las funciones de los pines quedan en el mismo lugar. (MOSI en D11, MISO en D12, SCK en D13).</br> </br>
+<b>Click para agrandar:</b>
 </br> </br>
 <img src="http://i.imgur.com/hZGMRwH.png" width="375"> <img src="http://i.imgur.com/9cpfTGl.png" width="430">
 </br> </br>
 <img src="http://i.imgur.com/PF1HWho.png" width="375"> <img src="http://i.imgur.com/fHC5LQK.png" width="430">
 
-##How to install
-#### Boards Manager Installation
-This installation method requires Arduino IDE version 1.6.4 or greater.
-* Open the Arduino IDE.
-* Open the **File > Preferences** menu item.
-* Enter the following URL in **Additional Boards Manager URLs**: `https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_MultiploN6Max_index.json`
-* Open the **Tools > Board > Boards Manager...** menu item.
-* Wait for the platform indexes to finish downloading.
-* Scroll down until you see the **MultiploN6-Max** entry and click on it.
-  * **Note**: If you are using Arduino IDE 1.6.6 then you may need to close **Boards Manager** and then reopen it before the **MultiploN6-Max** entry will appear.
-* Click **Install**.
-* After installation is complete close the **Boards Manager** window.
+##Cómo instalar
+#### Usando Boards Manager
+Este método requiere de la version de Arduino IDE 1.6.4 o mayor.
+* Abrir el IDE Arduino.
+* Abrir el item del menu **Archivo > Ajustes**
+* Ingresar la siguiente URL en **URLs adicionales**:
+`https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_MultiploN6Max_index.json`
+* Abrir el menu **Herramientas > Tarjeta > Manager de tarjetas...**
+* Esperar al IDE para indexar las nuevas definiciones.
+* Arrastrar hacia abajo hasta encontrar la entrada **MultiploN6-Max** y clickearla.
+* **Nota** En la version 1.6.6 se tiene que cerrar y volver a abrir la ventana del Administrador de tarjetas antes de que la entrada **MultiploN6-Max** aparezca.
+* Click en **Instalar**
+* Cuando la instalacion se complete cerrar la ventana del Administrador de tarjetas.
