@@ -1,4 +1,4 @@
-# Multiplo N6 Core
+# Duinobot AVR Core
 
 Un core Arduino para el robot MultiploN6-Max de [RobotGroup](www.robotgroup.com.ar), corriendo [Optiboot 6](https://github.com/Optiboot/optiboot). Las librerías más importantes como SD, Servo, SPI y Wire fueron modificadas para que funcionen correctamente. Sin embargo, la mayoría de librerías de terceros deberían funcionar sin problemas.
 
@@ -37,7 +37,7 @@ Este método requiere de la version de Arduino IDE 1.6.4 o mayor.
 * Abrir el IDE Arduino.
 * Abrir el item del menu **Archivo > Ajustes**
 * Ingresar la siguiente URL en **URLs adicionales**:
-`https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_MultiploN6Max_index.json`
+`https://raw.githubusercontent.com/Robots-Linti/Multiplo/master/package_SoporteLihuen_DuinobotAVRBoards_index.json`
 * Abrir el menu **Herramientas > Tarjeta > Manager de tarjetas...**
 * Esperar al IDE para indexar las nuevas definiciones.
 * Arrastrar hacia abajo hasta encontrar la entrada **MultiploN6-Max** y clickearla.
