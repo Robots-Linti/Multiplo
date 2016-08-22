@@ -20,6 +20,7 @@ DuinoBotv1x_CDC.build.mcu=atmega32u4
 DuinoBotv1x_CDC.build.f_cpu=16000000L
 DuinoBotv1x_CDC.build.core=DuinoBot.v1.x_0022
 DuinoBotv1x_CDC.build.variant=duinobot.v1.x
+DuinoBotv1x_CDC.build.board=AVR_DUINOBOTV1X_CDC
 
 ##############################################################
 ## DuinoBot.v1.x.HID ##
@@ -65,5 +66,5 @@ DuinoBotv2x_1284_CDC.bootloader.lock_bits=0x0F
 
 DuinoBotv2x_1284_CDC.build.mcu=atmega1284p
 DuinoBotv2x_1284_CDC.build.f_cpu=16000000L
-DuinoBotv2x_1284_CDC.build.core=DuinoBot.v2.x_1.02
+DuinoBotv2x_1284_CDC.build.core=Duinobot.v2.x
 DuinoBotv2x_1284_CDC.build.variant=duinobot.v2.x
