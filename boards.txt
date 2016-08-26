@@ -21,6 +21,7 @@ DuinoBotv1x_CDC.build.mcu=atmega32u4
 DuinoBotv1x_CDC.build.f_cpu=16000000L
 DuinoBotv1x_CDC.build.core=Duinobot.v1.x.CDC
 DuinoBotv1x_CDC.build.variant=duinobot.v1.x
+DuinoBotv1x_CDC.build.board=AVR_DUINOBOTV1X_CDC
 
 DuinoBotv1x_CDC.build.vid=0x03eb
 DuinoBotv1x_CDC.build.pid=0x204a
@@ -48,8 +49,9 @@ DuinoBotv1x_HID.bootloader.lock_bits=0xFF
 
 DuinoBotv1x_HID.build.mcu=atmega32u4
 DuinoBotv1x_HID.build.f_cpu=16000000L
-DuinoBotv1x_HID.build.core=DuinoBot.v1.x.HID_0022
+DuinoBotv1x_HID.build.core=Duinobot.v1.x.HID
 DuinoBotv1x_HID.build.variant=duinobot.v1.x.HID
+DuinoBotv1x_HID.build.board=AVR_DUINOBOTV1X_HID
 
 ##############################################################
 ## DuinoBot.v2.x ##
@@ -72,5 +74,7 @@ DuinoBotv2x_1284_CDC.bootloader.lock_bits=0x0F
 
 DuinoBotv2x_1284_CDC.build.mcu=atmega1284p
 DuinoBotv2x_1284_CDC.build.f_cpu=16000000L
-DuinoBotv2x_1284_CDC.build.core=DuinoBot.v2.x_1.02
+DuinoBotv2x_1284_CDC.build.core=Duinobot.v2.x
 DuinoBotv2x_1284_CDC.build.variant=duinobot.v2.x
+DuinoBotv2x_1284_CDC.build.board=AVR_DUINOBOTV2X_1284_CDC
+
