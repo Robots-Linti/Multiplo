@@ -11,15 +11,14 @@ DuinoBotv1x_CDC.upload.speed=115200
 DuinoBotv1x_CDC.bootloader.low_fuses=0xFF
 DuinoBotv1x_CDC.bootloader.high_fuses=0xD8
 DuinoBotv1x_CDC.bootloader.extended_fuses=0xFF
-DuinoBotv1x_CDC.bootloader.path=DuinoBot.v1.x
 DuinoBotv1x_CDC.bootloader.file=DuinoBot.v1.x/DuinoBot.v1.x.Bootloader.hex
 DuinoBotv1x_CDC.bootloader.unlock_bits=0x3F
 DuinoBotv1x_CDC.bootloader.lock_bits=0xFF
-DuinoBotv1x_CDC.bootloader.tool=avrdude # Usar configuración local
+DuinoBotv1x_CDC.bootloader.tool=arduino:avrdude
 
 DuinoBotv1x_CDC.build.mcu=atmega32u4
 DuinoBotv1x_CDC.build.f_cpu=16000000L
-DuinoBotv1x_CDC.build.core=Duinobot.v1.x.CDC
+DuinoBotv1x_CDC.build.core=arduino:arduino
 DuinoBotv1x_CDC.build.variant=duinobot.v1.x
 DuinoBotv1x_CDC.build.board=AVR_DUINOBOTV1X_CDC
 
@@ -42,15 +41,14 @@ DuinoBotv1x_HID.upload.speed=115200
 DuinoBotv1x_HID.bootloader.low_fuses=0xFF
 DuinoBotv1x_HID.bootloader.high_fuses=0xD8
 DuinoBotv1x_HID.bootloader.extended_fuses=0xFF
-DuinoBotv1x_HID.bootloader.path=DuinoBot.v1.x
-DuinoBotv1x_HID.bootloader.file=BootloaderHID.hex
+DuinoBotv1x_HID.bootloader.file=DuinoBot.v1.x/BootloaderHID.hex
 DuinoBotv1x_HID.bootloader.unlock_bits=0x3F
 DuinoBotv1x_HID.bootloader.lock_bits=0xFF
 
 DuinoBotv1x_HID.build.mcu=atmega32u4
 DuinoBotv1x_HID.build.f_cpu=16000000L
-DuinoBotv1x_HID.build.core=Duinobot.v1.x.HID
-DuinoBotv1x_HID.build.variant=duinobot.v1.x.HID
+DuinoBotv1x_HID.build.core=arduino:arduino
+DuinoBotv1x_HID.build.variant=duinobot.v1.x
 DuinoBotv1x_HID.build.board=AVR_DUINOBOTV1X_HID
 
 ##############################################################
@@ -67,14 +65,13 @@ DuinoBotv2x_1284_CDC.bootloader.tool=avrdude
 DuinoBotv2x_1284_CDC.bootloader.low_fuses=0xFF
 DuinoBotv2x_1284_CDC.bootloader.high_fuses=0xDE
 DuinoBotv2x_1284_CDC.bootloader.extended_fuses=0xFD
-DuinoBotv2x_1284_CDC.bootloader.path=DuinoBot.v2.x.m644P.m1284P
-DuinoBotv2x_1284_CDC.bootloader.file=optiboot_DB23_1284p.hex
+DuinoBotv2x_1284_CDC.bootloader.file=DuinoBot.v2.x.m644P.m1284P/Hexs/optiboot_DB23_1284p.hex
 DuinoBotv2x_1284_CDC.bootloader.unlock_bits=0x3F
 DuinoBotv2x_1284_CDC.bootloader.lock_bits=0x0F
 
 DuinoBotv2x_1284_CDC.build.mcu=atmega1284p
 DuinoBotv2x_1284_CDC.build.f_cpu=16000000L
-DuinoBotv2x_1284_CDC.build.core=Duinobot.v2.x
+DuinoBotv2x_1284_CDC.build.core=arduino:arduino
 DuinoBotv2x_1284_CDC.build.variant=duinobot.v2.x
 DuinoBotv2x_1284_CDC.build.board=AVR_DUINOBOTV2X_1284_CDC
 
