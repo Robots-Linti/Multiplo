@@ -82,8 +82,8 @@
           },
           "url": "https://github.com/Robots-Linti/Multiplo/raw/binary/Multiplo-Duinobot-1.1.1.tar.gz",
           "archiveFileName": "Multiplo-Duinobot-1.1.1.tar.gz",
-          "checksum": "SHA-256:e27def02ccae8cbe4a4306f937dd22da9363a97f0e0569eac4187d400515369e",
-          "size": "2369087",
+          "checksum": "SHA-256:50e7b0da478139ec47b24791f7e2fee859df6e8b34decc77d17b1e60607ffcc2",
+          "size": "2370384",
           "boards": [
             {
               "name": "Duinobot v1.x"

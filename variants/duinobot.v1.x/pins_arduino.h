@@ -63,6 +63,12 @@ static const uint8_t M1_EN = 3;
 static const uint8_t M1_D0 = 4;
 static const uint8_t M1_D1 = 8;
 
+#define digitalPinToPCICR(p)    ((((p) >= 9 && (p) <= 13) || (p) >= 3) ? (&PCICR) : ((uint8_t *)0))
+#define digitalPinToPCICRbit(p) 0
+#define digitalPinToPCMSK(p)    ((((p) >= 9 && (p) <= 13) || (p) == 3) ? (&PCMSK0) : ((uint8_t *)0))
+#define digitalPinToPCMSKbit(p) (((p) == 3) ? 6 : (((p) == 9) ? 7 : (((p) == 10) ? 0 : (((p) == 11) ? 2 : (((p) == 12) ? 3 : (((p) == 13) ? 1 : 0))))))
+
+
 #define NOT_A_PIN 0
 #define NOT_A_PORT 0
 
