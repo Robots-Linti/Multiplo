@@ -69,6 +69,7 @@ static const uint8_t M1_D1 = 8;
 #define digitalPinToPCMSKbit(p) (((p) == 3) ? 6 : (((p) == 9) ? 7 : (((p) == 10) ? 0 : (((p) == 11) ? 2 : (((p) == 12) ? 3 : (((p) == 13) ? 1 : 0))))))
 
 
+
 #define NOT_A_PIN 0
 #define NOT_A_PORT 0
 
@@ -77,24 +78,25 @@ static const uint8_t M1_D1 = 8;
 #define TIMER0B 2
 #define TIMER1A 3
 #define TIMER1B 4
-#define TIMER2  5
-#define TIMER2A 6
-#define TIMER2B 7
+#define TIMER1C 5
+#define TIMER2  6
+#define TIMER2A 7
+#define TIMER2B 8
 
-#define TIMER3A 8
-#define TIMER3B 9
-#define TIMER3C 10
-#define TIMER4A 11
-#define TIMER4B 12
-#define TIMER4C 13
+#define TIMER3A 9
+#define TIMER3B 10
+#define TIMER3C 11
+#define TIMER4A 12
+#define TIMER4B 13
+#define TIMER4C 14
 
 //##RG.Labs.20110305 begin
 // Added the definitions for the MEGA32U4
 
-#define TIMER4D 14
-#define TIMER5A 15
-#define TIMER5B 16
-#define TIMER5C 17
+#define TIMER4D 15
+#define TIMER5A 16
+#define TIMER5B 17
+#define TIMER5C 18
 
 //#define TIMER5A 14
 //#define TIMER5B 15
@@ -102,17 +104,10 @@ static const uint8_t M1_D1 = 8;
 
 //##RG.Labs.20110305 end
 
-#if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
-const static uint8_t SS   = 53;
-const static uint8_t MOSI = 51;
-const static uint8_t MISO = 50;
-const static uint8_t SCK  = 52;
-#else
 const static uint8_t SS   = 10;
 const static uint8_t MOSI = 11;
 const static uint8_t MISO = 12;
 const static uint8_t SCK  = 13;
-#endif
 
 //##RG.Labs.20110305 begin
 // Added for DuinoBot V1.XX pins
@@ -149,5 +144,12 @@ extern const uint8_t PROGMEM digital_pin_to_timer_PGM[];
 #define analogPinToAdcChannel(P) ( pgm_read_byte( analog_pin_to_adc_channel_PGM + (P) ) )
 #define analogChannelToMux(P) ( pgm_read_byte( analog_channel_to_adc_mux_PGM + (P) ) )
 //##RG.Labs.20110305 end
+
+//	__AVR_ATmega32U4__ has an unusual mapping of pins to channels
+#define analogPinToChannel(P) (analogPinToAdcChannel(P))
+
+#define digitalPinHasPWM(p)         ((p) == 3 || (p) == 5 || (p) == 6 || (p) == 8 || (p) == 9 || (p) == 22 || (p) == 23)
+
+#define digitalPinToInterrupt(p) ((p) == 0 ? 2 : ((p) == 1 ? 3 : ((p) == 2 ? 0 : ((p) == 7 ? 1 : ((p) == 21 ? 6 : NOT_AN_INTERRUPT)))))
 
 #endif
