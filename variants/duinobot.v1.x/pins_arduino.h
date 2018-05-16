@@ -27,16 +27,6 @@
 
 #include <avr/pgmspace.h>
 
-#define TX_RX_LED_INIT	DDRB |= (1<<0) // , DDRD |= (1<<5)
-/*
-#define TXLED0			PORTD |= (1<<5)
-#define TXLED1			PORTD &= ~(1<<5)
-*/
-#define RXLED0			PORTB |= (1<<0)
-#define RXLED1			PORTB &= ~(1<<0)
-#define TXLED0			RXLED0
-#define TXLED1			RXLED1
-
 static const uint8_t SDA = 3;
 static const uint8_t SCL = 2;
 static const uint8_t LED_BUILTIN = 13;
@@ -62,12 +52,6 @@ static const uint8_t M0_D1 = 21;
 static const uint8_t M1_EN = 3;
 static const uint8_t M1_D0 = 4;
 static const uint8_t M1_D1 = 8;
-
-#define digitalPinToPCICR(p)    ((((p) >= 9 && (p) <= 13) || (p) >= 3) ? (&PCICR) : ((uint8_t *)0))
-#define digitalPinToPCICRbit(p) 0
-#define digitalPinToPCMSK(p)    ((((p) >= 9 && (p) <= 13) || (p) == 3) ? (&PCMSK0) : ((uint8_t *)0))
-#define digitalPinToPCMSKbit(p) (((p) == 3) ? 6 : (((p) == 9) ? 7 : (((p) == 10) ? 0 : (((p) == 11) ? 2 : (((p) == 12) ? 3 : (((p) == 13) ? 1 : 0))))))
-
 
 #define NOT_A_PIN 0
 #define NOT_A_PORT 0

@@ -18,7 +18,7 @@ DuinoBotv1x_CDC.bootloader.tool=arduino:avrdude
 
 DuinoBotv1x_CDC.build.mcu=atmega32u4
 DuinoBotv1x_CDC.build.f_cpu=16000000L
-DuinoBotv1x_CDC.build.core=arduino:arduino
+DuinoBotv1x_CDC.build.core=duinobot_v12
 DuinoBotv1x_CDC.build.variant=duinobot.v1.x
 DuinoBotv1x_CDC.build.board=AVR_DUINOBOTV1X_CDC
 
