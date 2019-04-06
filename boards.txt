@@ -1,55 +1,33 @@
 ##############################################################
-## DuinoBot.v1.x.CDC ##
+## DuinoBot.v1.x.LeonardoBootloader ##
 ##############################################################
 
-DuinoBotv1x_CDC.name=DuinoBot.v1.x
-DuinoBotv1x_CDC.upload.tool=arduino:avrdude
-DuinoBotv1x_CDC.upload.protocol=avr109
-DuinoBotv1x_CDC.upload.maximum_size=28670
-DuinoBotv1x_CDC.upload.speed=115200
+DuinoBotv1x_Leonardo.name=DuinoBot.v1.x (Leonardo Bootloader)
+DuinoBotv1x_Leonardo.upload.tool=arduino:avrdude
+DuinoBotv1x_Leonardo.upload.protocol=avr109
+DuinoBotv1x_Leonardo.upload.maximum_size=28670
+DuinoBotv1x_Leonardo.upload.speed=57600
 
-DuinoBotv1x_CDC.bootloader.low_fuses=0xFF
-DuinoBotv1x_CDC.bootloader.high_fuses=0xD8
-DuinoBotv1x_CDC.bootloader.extended_fuses=0xFF
-DuinoBotv1x_CDC.bootloader.file=DuinoBot.v1.x/DuinoBot.v1.x.Bootloader.hex
-DuinoBotv1x_CDC.bootloader.unlock_bits=0x3F
-DuinoBotv1x_CDC.bootloader.lock_bits=0xFF
-DuinoBotv1x_CDC.bootloader.tool=arduino:avrdude
+DuinoBotv1x_Leonardo.bootloader.low_fuses=0xFF
+DuinoBotv1x_Leonardo.bootloader.high_fuses=0xD8
+DuinoBotv1x_Leonardo.bootloader.extended_fuses=0xFF
+DuinoBotv1x_Leonardo.bootloader.file=caterina/Caterina-Leonardo.hex
+DuinoBotv1x_Leonardo.bootloader.unlock_bits=0x3F
+DuinoBotv1x_Leonardo.bootloader.lock_bits=0xFF
+DuinoBotv1x_Leonardo.bootloader.tool=arduino:avrdude
 
-DuinoBotv1x_CDC.build.mcu=atmega32u4
-DuinoBotv1x_CDC.build.f_cpu=16000000L
-DuinoBotv1x_CDC.build.core=arduino:arduino
-DuinoBotv1x_CDC.build.variant=duinobot.v1.x
-DuinoBotv1x_CDC.build.board=AVR_DUINOBOTV1X_CDC
+DuinoBotv1x_Leonardo.build.mcu=atmega32u4
+DuinoBotv1x_Leonardo.build.f_cpu=16000000L
+DuinoBotv1x_Leonardo.build.core=arduino:arduino
+DuinoBotv1x_Leonardo.build.variant=duinobot.v1.x
+DuinoBotv1x_Leonardo.build.board=AVR_DUINOBOTV1X_LEONARDO
 
-DuinoBotv1x_CDC.build.vid=0x03eb
-DuinoBotv1x_CDC.build.pid=0x204a
-DuinoBotv1x_CDC.build.usb_product="DuinoBot 1.x CDC"
-DuinoBotv1x_CDC.build.usb_manufacturer="Multiplo"
-DuinoBotv1x_CDC.build.extra_flags={build.usb_flags}
+DuinoBotv1x_Leonardo.build.vid=0x03eb
+DuinoBotv1x_Leonardo.build.pid=0x204a
+DuinoBotv1x_Leonardo.build.usb_product="DuinoBot 1.x (Leonardo Bootloader)"
+DuinoBotv1x_Leonardo.build.usb_manufacturer="Multiplo"
+DuinoBotv1x_Leonardo.build.extra_flags={build.usb_flags}
 
-##############################################################
-## DuinoBot.v1.x.HID ##
-##############################################################
-
-DuinoBotv1x_HID.name=DuinoBot.v1.x.HID
-DuinoBotv1x_HID.upload.tool=hidboot
-DuinoBotv1x_HID.upload.protocol=avr109
-DuinoBotv1x_HID.upload.maximum_size=28670
-DuinoBotv1x_HID.upload.speed=115200
-
-DuinoBotv1x_HID.bootloader.low_fuses=0xFF
-DuinoBotv1x_HID.bootloader.high_fuses=0xD8
-DuinoBotv1x_HID.bootloader.extended_fuses=0xFF
-DuinoBotv1x_HID.bootloader.file=DuinoBot.v1.x/BootloaderHID.hex
-DuinoBotv1x_HID.bootloader.unlock_bits=0x3F
-DuinoBotv1x_HID.bootloader.lock_bits=0xFF
-
-DuinoBotv1x_HID.build.mcu=atmega32u4
-DuinoBotv1x_HID.build.f_cpu=16000000L
-DuinoBotv1x_HID.build.core=arduino:arduino
-DuinoBotv1x_HID.build.variant=duinobot.v1.x
-DuinoBotv1x_HID.build.board=AVR_DUINOBOTV1X_HID
 
 ##############################################################
 ## DuinoBot.v2.x ##
