@@ -2,31 +2,45 @@
 ## DuinoBot.v1.x.LeonardoBootloader ##
 ##############################################################
 
-DuinoBotv1x_Leonardo.name=DuinoBot.v1.x (Leonardo Bootloader)
-DuinoBotv1x_Leonardo.upload.tool=arduino:avrdude
-DuinoBotv1x_Leonardo.upload.protocol=avr109
-DuinoBotv1x_Leonardo.upload.maximum_size=28670
-DuinoBotv1x_Leonardo.upload.speed=57600
+duinobotv12_caterina.name=DuinoBot v1.2 (Caterina)
+duinobotv12_caterina.vid.0=0x2341
+duinobotv12_caterina.pid.0=0x0036
+duinobotv12_caterina.vid.1=0x2341
+duinobotv12_caterina.pid.1=0x8036
+duinobotv12_caterina.vid.2=0x2A03
+duinobotv12_caterina.pid.2=0x0036
+duinobotv12_caterina.vid.3=0x2A03
+duinobotv12_caterina.pid.3=0x8036
 
-DuinoBotv1x_Leonardo.bootloader.low_fuses=0xFF
-DuinoBotv1x_Leonardo.bootloader.high_fuses=0xD8
-DuinoBotv1x_Leonardo.bootloader.extended_fuses=0xFF
-DuinoBotv1x_Leonardo.bootloader.file=caterina/Caterina-Leonardo.hex
-DuinoBotv1x_Leonardo.bootloader.unlock_bits=0x3F
-DuinoBotv1x_Leonardo.bootloader.lock_bits=0xFF
-DuinoBotv1x_Leonardo.bootloader.tool=arduino:avrdude
+duinobotv12_caterina.upload.tool=arduino:avrdude
+duinobotv12_caterina.upload.protocol=avr109
+duinobotv12_caterina.upload.maximum_size=28672
+duinobotv12_caterina.upload.maximum_data_size=2560
+duinobotv12_caterina.upload.speed=57600
+duinobotv12_caterina.upload.disable_flushing=true
+duinobotv12_caterina.upload.use_1200bps_touch=true
+duinobotv12_caterina.upload.wait_for_upload_port=true
 
-DuinoBotv1x_Leonardo.build.mcu=atmega32u4
-DuinoBotv1x_Leonardo.build.f_cpu=16000000L
-DuinoBotv1x_Leonardo.build.core=arduino:arduino
-DuinoBotv1x_Leonardo.build.variant=duinobot.v1.x
-DuinoBotv1x_Leonardo.build.board=AVR_DUINOBOTV1X_LEONARDO
+duinobotv12_caterina.bootloader.tool=arduino:avrdude
+duinobotv12_caterina.bootloader.low_fuses=0xff
+duinobotv12_caterina.bootloader.high_fuses=0xd8
+duinobotv12_caterina.bootloader.extended_fuses=0xcb
+duinobotv12_caterina.bootloader.file=caterina/Caterina-Leonardo.hex
+duinobotv12_caterina.bootloader.unlock_bits=0x3F
+duinobotv12_caterina.bootloader.lock_bits=0x2F
 
-DuinoBotv1x_Leonardo.build.vid=0x03eb
-DuinoBotv1x_Leonardo.build.pid=0x204a
-DuinoBotv1x_Leonardo.build.usb_product="DuinoBot 1.x (Leonardo Bootloader)"
-DuinoBotv1x_Leonardo.build.usb_manufacturer="Multiplo"
-DuinoBotv1x_Leonardo.build.extra_flags={build.usb_flags}
+duinobotv12_caterina.build.mcu=atmega32u4
+duinobotv12_caterina.build.f_cpu=16000000L
+duinobotv12_caterina.build.vid=0x2341
+duinobotv12_caterina.build.pid=0x8036
+duinobotv12_caterina.build.usb_product="DuinoBot v1.2 (Caterina)"
+duinobotv12_caterina.build.board=AVR_DUINOBOTV1X_CATERINA
+duinobotv12_caterina.build.core=arduino:arduino
+duinobotv12_caterina.build.variant=duinobot.v1.x
+duinobotv12_caterina.build.extra_flags={build.usb_flags}
+
+duinobotv12_caterina.build.usb_manufacturer="Multiplo"
+
 
 
 ##############################################################
