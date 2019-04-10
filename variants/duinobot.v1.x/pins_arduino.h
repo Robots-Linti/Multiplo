@@ -91,11 +91,12 @@
 #define NUM_DIGITAL_PINS  26
 #define NUM_ANALOG_INPUTS 7
 
-#define TX_RX_LED_INIT	DDRB |= (1<<1)
-#define TXLED0			PORTB |= (1<<1)
-#define TXLED1			PORTB &= ~(1<<1)
-#define RXLED0			PORTB |= (1<<1)
-#define RXLED1			PORTB &= ~(1<<1)
+// There are no TX and RX dedicated LEDs on DuinoBot v1.2
+#define TX_RX_LED_INIT	{}
+#define TXLED0			{}
+#define TXLED1			{}
+#define RXLED0			{}
+#define RXLED1			{}
 
 #define PIN_WIRE_SDA         (7)
 #define PIN_WIRE_SCL         (2)
@@ -104,8 +105,9 @@ static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
 #define LED_BUILTIN 13
-#define LED_BUILTIN_RX 13
-#define LED_BUILTIN_TX 13
+// There are no TX and RX dedicated LEDs on DuinoBot v1.2
+//#define LED_BUILTIN_RX 13
+//#define LED_BUILTIN_TX 13
 
 // Map SPI port to 'new' pins D14..D17
 #define PIN_SPI_SS    (10)
