@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For DCMotor class
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+BATTERY		LITERAL1
+RUN_SW		LITERAL1
+SPEAKER		LITERAL1
+M0_EN		LITERAL1
+M0_D0		LITERAL1
+M0_D1		LITERAL1
+M1_EN		LITERAL1
+M1_D0		LITERAL1
+M1_D1		LITERAL1
