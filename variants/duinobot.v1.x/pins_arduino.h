@@ -152,9 +152,9 @@ static const uint8_t M1_D0 = 4;
 static const uint8_t M1_D1 = 8;
 
 
-#define digitalPinToPCICR(p)    (((p) == 3 || ((p) >= 9 && (p) <= 13) || (p) == 20 || (p) == 23) ? (&PCICR) : ((uint_t *)0))
+#define digitalPinToPCICR(p)    (((p) == 3 || ((p) >= 9 && (p) <= 13) || (p) == 20 || (p) == 23) ? (&PCICR) : ((uint8_t *)0))
 #define digitalPinToPCICRbit(p) 0
-#define digitalPinToPCMSK(p)    (((p) == 3 || ((p) >= 9 && (p) <= 13) || (p) == 20 || (p) == 23) ? (&PCMSK) : ((uint_t *)0))
+#define digitalPinToPCMSK(p)    (((p) == 3 || ((p) >= 9 && (p) <= 13) || (p) == 20 || (p) == 23) ? (&PCMSK0) : ((uint8_t *)0))
 #define digitalPinToPCMSKbit(p) ((p) == 3 ? 6 : ((p) == 9 ? 7 : ((p) == 10 ? 0 : ((p) == 11 ? 2 : ((p) == 12 ? 3 : ((p) == 13 ? 1 : ((p) == 20 ? 4 : ((p) == 23 ? 5 : -1))))))))
 
 //	__AVR_ATmega32U4__ has an unusual mapping of pins to channels
