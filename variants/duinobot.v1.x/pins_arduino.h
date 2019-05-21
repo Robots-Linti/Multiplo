@@ -122,12 +122,12 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 
 // Mapping of analog pins as digital I/O
 // A6-A11 share with digital pins
-#define PIN_A0   (14)
-#define PIN_A1   (15)
-#define PIN_A2   (16)
-#define PIN_A3   (17)
-#define PIN_A4   (18)
-#define PIN_A5   (19)
+#define PIN_A0   (18)
+#define PIN_A1   (19)
+#define PIN_A2   (20)
+#define PIN_A3   (21)
+#define PIN_A4   (22)
+#define PIN_A5   (23)
 #define PIN_A6   (24) // Battery Status
 
 static const uint8_t A0 = PIN_A0;

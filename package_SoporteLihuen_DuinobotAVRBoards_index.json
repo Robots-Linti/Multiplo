@@ -203,6 +203,39 @@
               "version": "6.0.1-arduino5"
             }
           ]
+        },
+        {
+          "name": "Duinobot AVR Boards",
+          "architecture": "avr",
+          "version": "1.1.5",
+          "category": "Contributed",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/Robots-Linti/Multiplo/raw/binary/Multiplo-Duinobot-1.1.4a.tar.gz",
+          "archiveFileName": "Multiplo-Duinobot-1.1.4a.tar.gz",
+          "checksum": "SHA-256:12d44860175ed82fdac0526184ca7f6788963ecc0db60544994992fb55b6b40c",
+          "size": "352884",
+          "boards": [
+            {
+              "name": "Duinobot v1.x"
+            },
+            {
+              "name": "Duinobot v2.x"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
         }
       ],
       "tools": []
